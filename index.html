@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shayan - Front-End Developer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="icon" type="image/png" href="https://i.postimg.cc/SKFMPFRQ/profile.jpg">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #0f172a;
+color: #e2e8f0;
+}
+.text-accent {
+color: #38bdf8;
+}
+.bg-card {
+background-color: #1e293b;
+}
+.bg-section {
+background-color: #0f172a;
+}
+.fade-in-on-scroll {
+opacity: 0;
+transform: translateY(20px);
+transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-on-scroll.is-visible {
+opacity: 1;
+transform: translateY(0);
+}
+.card-hover:hover {
+transform: translateY(-8px);
+box-shadow: 0 10px 30px rgba(56, 189, 248, 0.1);
+}
+.skill-card {
+position: relative;
+overflow: hidden;
+}
+.skill-icon {
+transition: transform 0.3s ease-in-out;
+}
+.skill-card:hover .skill-icon {
+transform: scale(1.1);
+}
+.skill-progress {
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: rgba(56, 189, 248, 0.2);
+border-radius: 0 0 10px 10px;
+overflow: hidden;
+}
+.skill-progress-bar {
+background-color: #38bdf8;
+height: 8px;
+border-radius: 0;
+}
+</style>
+</head>
+<body class="antialiased">
+
+<header class="py-6 sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md">
+    <nav class="container mx-auto px-4 flex items-center justify-between">
+        <a href="#" class="text-3xl font-bold text-accent">Shayan.</a>
+        <ul class="flex space-x-6 text-lg">
+            <li><a href="#about" class="nav-link text-gray-400 hover:text-accent transition-colors duration-300">About</a></li>
+            <li><a href="#skills" class="nav-link text-gray-400 hover:text-accent transition-colors duration-300">Skills</a></li>
+            <li><a href="#projects" class="nav-link text-gray-400 hover:text-accent transition-colors duration-300">Projects</a></li>
+            <li><a href="#contact" class="nav-link text-gray-400 hover:text-accent transition-colors duration-300">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container mx-auto px-4 py-8">
+    <section class="bg-card rounded-3xl shadow-xl flex flex-col md:flex-row items-center p-8 md:p-16 space-y-8 md:space-y-0 md:space-x-12 mb-12 fade-in-on-scroll">
+        <div class="flex-shrink-0">
+            <img src="https://i.postimg.cc/SKFMPFRQ/profile.jpg" alt="Profile Picture of Shayan" class="w-64 h-64 rounded-full border-4 border-accent shadow-lg object-cover">
+        </div>
+        <div class="flex-1 text-center md:text-left">
+            <h1 class="text-5xl lg:text-6xl font-bold mb-4 text-white">Hello! I'm Shayan </h1>
+            <p class="text-xl leading-relaxed mb-6 text-gray-300">A passionate **front-end web developer** dedicated to creating clean, responsive, and user-friendly websites. I enjoy bringing creative ideas to life with code and am actively learning new technologies.</p>
+            <div class="space-x-6 text-3xl">
+                <a href="[https://instagram.com/callmee.shayan](https://instagram.com/callmee.shayan)" class="hover:text-accent transition-colors duration-300" target="_blank" rel="noopener noreferrer"><i class="ri-instagram-fill"></i></a>
+                <a href="[https://www.threads.com/@callmee.shayan](https://www.threads.com/@callmee.shayan)" class="hover:text-accent transition-colors duration-300" target="_blank" rel="noopener noreferrer"><i class="ri-threads-fill"></i></a>
+                <a href="#" class="hover:text-accent transition-colors duration-300" target="_blank" rel="noopener noreferrer"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-card rounded-3xl shadow-xl p-8 md:p-12 mb-12 fade-in-on-scroll">
+        <h2 class="text-4xl font-bold text-accent mb-6 text-center">About Me</h2>
+        <p class="text-lg leading-relaxed text-center text-gray-300">I'm a self-taught front-end developer building beautiful and functional websites from scratch. My journey in web development began with a passion for **HTML, CSS**, and **Bootstrap**. I am currently learning **JavaScript** to enhance the interactivity of my projects. Additionally, I've started exploring **PHP** and **MySQL** to understand back-end development. I am a lifelong learner, always seeking to refine my skills and stay current with industry trends. My goal is to craft seamless digital experiences that are both visually appealing and a joy to use. I'm excited to continue growing and creating in the web development space!</p>
+    </section>
+
+    <section id="skills" class="bg-card rounded-3xl shadow-xl p-8 md:p-12 mb-12 fade-in-on-scroll">
+        <h2 class="text-4xl font-bold text-accent mb-8 text-center">My Skills</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+            <div class="skill-card p-6 bg-slate-900 rounded-xl shadow-md card-hover transition-transform duration-300">
+                <i class="fab fa-html5 text-6xl text-orange-500 skill-icon"></i>
+                <span class="block mt-4 text-xl font-medium">HTML</span>
+            </div>
+            <div class="skill-card p-6 bg-slate-900 rounded-xl shadow-md card-hover transition-transform duration-300">
+                <i class="fab fa-css3-alt text-6xl text-blue-500 skill-icon"></i>
+                <span class="block mt-4 text-xl font-medium">CSS</span>
+            </div>
+            <div class="skill-card p-6 bg-slate-900 rounded-xl shadow-md card-hover transition-transform duration-300">
+                <i class="fab fa-js-square text-6xl text-yellow-400 skill-icon"></i>
+                <span class="block mt-4 text-xl font-medium">JavaScript</span>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill-card p-6 bg-slate-900 rounded-xl shadow-md card-hover transition-transform duration-300">
+                <i class="fab fa-bootstrap text-6xl text-purple-500 skill-icon"></i>
+                <span class="block mt-4 text-xl font-medium">Bootstrap</span>
+            </div>
+            <div class="skill-card p-6 bg-slate-900 rounded-xl shadow-md card-hover transition-transform duration-300">
+                <i class="fab fa-php text-6xl text-indigo-500 skill-icon"></i>
+                <span class="block mt-4 text-xl font-medium">PHP</span>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 20%;"></div>
+                </div>
+            </div>
+            <div class="skill-card p-6 bg-slate-900 rounded-xl shadow-md card-hover transition-transform duration-300">
+                <i class="fas fa-database text-6xl text-lime-500 skill-icon"></i>
+                <span class="block mt-4 text-xl font-medium">MySQLi</span>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 10%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-card rounded-3xl shadow-xl p-8 md:p-12 mb-12 fade-in-on-scroll">
+        <h2 class="text-4xl font-bold text-accent mb-8 text-center">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-slate-900 p-6 rounded-xl shadow-md card-hover transition-transform duration-300">
+                <h3 class="text-2xl font-semibold mb-2 text-accent">E-commerce Platform</h3>
+                <p class="text-lg text-gray-300">A foundational e-commerce site with a focus on **front-end development** using **HTML, CSS**, and basic **JavaScript** for user interface enhancements. This project demonstrates my ability to structure content and create a visually appealing layout.</p>
+            </div>
+            <div class="bg-slate-900 p-6 rounded-xl shadow-md card-hover transition-transform duration-300">
+                <h3 class="text-2xl font-semibold mb-2 text-accent">Personal Blog Site</h3>
+                <p class="text-lg text-gray-300">A responsive blog developed with **HTML, CSS**, and **Bootstrap**. The site showcases my skills in creating adaptable layouts that work well across different devices.</p>
+            </div>
+            <div class="bg-slate-900 p-6 rounded-xl shadow-md card-hover transition-transform duration-300">
+                <h3 class="text-2xl font-semibold mb-2 text-accent">Shoporia (E-commerce)</h3>
+                <p class="text-lg text-gray-300">An e-commerce platform demonstrating front-end design and some interactive elements using **HTML, CSS**, and basic **JavaScript**. Features include a shopping cart interface, login, and signup pages. You can see it live at <a href="[https://shoporia.neocities.org/](https://shoporia.neocities.org/)" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">shoporia.neocities.org</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-card rounded-3xl shadow-xl p-8 md:p-12 mb-12 fade-in-on-scroll">
+        <h2 class="text-4xl font-bold text-accent mb-8 text-center">Get In Touch</h2>
+        <p class="text-lg mb-6 text-center text-gray-300">I'm currently seeking opportunities to grow and apply my skills. If you have a front-end focused project in mind, let's connect!</p>
+        <form action="[https://formspree.io/f/xrblrlll](https://formspree.io/f/xrblrlll)" method="POST" class="max-w-xl mx-auto space-y-6">
+            <input type="hidden" name="_next" value="[https://shayancodes.netlify.app/thank-you.html](https://shayancodes.netlify.app/thank-you.html)">
+            <div>
+                <input type="text" name="name" placeholder="Your Name" required class="w-full p-4 bg-slate-900 rounded-lg border border-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent transition-colors duration-300">
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="Your Email" required class="w-full p-4 bg-slate-900 rounded-lg border border-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent transition-colors duration-300">
+            </div>
+            <div>
+                <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-4 bg-slate-900 rounded-lg border border-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent transition-colors duration-300"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-accent text-slate-900 font-bold text-xl py-4 rounded-lg hover:bg-sky-500 transition-colors duration-300">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer class="py-6 text-center text-gray-500 text-sm border-t border-gray-800">
+    <div class="container mx-auto px-4">
+        <p>&copy; 2024 Shayan. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Intersection Observer for fade-in effect on sections
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-on-scroll').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Smooth scrolling and active link highlighting
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('text-accent');
+                link.classList.add('text-gray-400');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.remove('text-gray-400');
+                    link.classList.add('text-accent');
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
